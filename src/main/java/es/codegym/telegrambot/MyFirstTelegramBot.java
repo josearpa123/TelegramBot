@@ -7,8 +7,8 @@ import org.telegram.telegrambots.updatesreceivers.DefaultBotSession;
 
 public class MyFirstTelegramBot extends MultiSessionTelegramBot {
 
-    public static final String NAME = "agregue el nombre del bot entre comillas a continuación";
-    public static final String TOKEN = "agregue el token del bot entre comillas a continuación";
+    public static final String NAME = "JosePrimer_bot";
+    public static final String TOKEN = "6976484703:AAGhO-wTLj9BiZboziK7qBhOZfrgmNJ8yIc";
 
     public MyFirstTelegramBot() {
         super(NAME, TOKEN);
@@ -17,6 +17,7 @@ public class MyFirstTelegramBot extends MultiSessionTelegramBot {
     @Override
     public void onUpdateEventReceived(Update update) {
         // TODO: escribiremos la funcionalidad principal del bot aquí
+        sendTextMessageAsync("Hola programador");
     }
 
     public static void main(String[] args) throws TelegramApiException {
